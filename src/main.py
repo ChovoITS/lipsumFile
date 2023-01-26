@@ -1,8 +1,7 @@
 import os
-import sys
 
 def fileOpen(filePath):
-    with open(os.path.join(sys.path[0], filePath), 'r') as f:
+    with open(os.path.join(os.path.abspath('./docs'), filePath), 'r') as f:
         lines = f.readlines()
     return lines
 
