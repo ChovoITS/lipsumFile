@@ -7,7 +7,8 @@ def fileOpen(filePath):
 
 
 def main():
-    lipsumFile = fileOpen("..\docs\lipsum.txt")
+    lipsumFile = fileOpen("lipsum.txt")
+    print(lipsumFile)
     while True:
         wordInput = input("Enter a word: ")
         wordFound = False
